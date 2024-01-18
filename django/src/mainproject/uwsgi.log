@@ -1,0 +1,292 @@
+*** Starting uWSGI 2.0.23 (64bit) on [Thu Jan 18 07:19:42 2024] ***
+compiled with version: 12.2.0 on 18 January 2024 05:38:21
+os: Linux-5.15.133.1-microsoft-standard-WSL2 #1 SMP Thu Oct 5 21:02:42 UTC 2023
+nodename: 22c074117f0a
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address :8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x55689704d700
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55689704d700 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 8, cores: 1)
+Python auto-reloader enabled
+[pid: 8|app: 0|req: 1/1] 172.22.0.1 () {54 vars in 988 bytes} [Thu Jan 18 07:20:28 2024] GET / => generated 10697 bytes in 34 msecs (HTTP/1.1 200) 5 headers in 153 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 8|app: 0|req: 2/2] 172.22.0.1 () {52 vars in 920 bytes} [Thu Jan 18 07:20:28 2024] GET /favicon.ico => generated 2115 bytes in 23 msecs (HTTP/1.1 404) 5 headers in 159 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./mainproject/urls.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 8)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /code
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (:8001)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /code/mainproject/django.ini
+*** Starting uWSGI 2.0.23 (64bit) on [Thu Jan 18 07:24:27 2024] ***
+compiled with version: 12.2.0 on 18 January 2024 05:38:21
+os: Linux-5.15.133.1-microsoft-standard-WSL2 #1 SMP Thu Oct 5 21:02:42 UTC 2023
+nodename: 22c074117f0a
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x5575cb4d26e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5575cb4d26e0 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 10, cores: 1)
+Python auto-reloader enabled
+Internal Server Error: /app/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./mainproject/urls.py", line 20, in <module>
+    path('app/', include('app.urls')),
+NameError: name 'include' is not defined
+[pid: 10|app: 0|req: 1/1] 172.22.0.1 () {54 vars in 996 bytes} [Thu Jan 18 07:24:38 2024] GET /app/ => generated 107565 bytes in 101 msecs (HTTP/1.1 500) 6 headers in 187 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./mainproject/urls.py", line 20, in <module>
+    path('app/', include('app.urls')),
+NameError: name 'include' is not defined
+[pid: 10|app: 0|req: 2/2] 172.22.0.1 () {54 vars in 988 bytes} [Thu Jan 18 07:25:36 2024] GET / => generated 107509 bytes in 65 msecs (HTTP/1.1 500) 6 headers in 187 bytes (1 switches on core 0)
+Internal Server Error: /app
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/usr/local/lib/python3.7/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/usr/local/lib/python3.7/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.7/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./mainproject/urls.py", line 20, in <module>
+    path('app/', include('app.urls')),
+NameError: name 'include' is not defined
+[pid: 10|app: 0|req: 3/3] 172.22.0.1 () {54 vars in 994 bytes} [Thu Jan 18 07:26:11 2024] GET /app => generated 119842 bytes in 79 msecs (HTTP/1.1 500) 3 headers in 126 bytes (1 switches on core 0)
+[pid: 10|app: 0|req: 4/4] 172.22.0.1 () {56 vars in 1025 bytes} [Thu Jan 18 07:26:54 2024] GET /app => generated 0 bytes in 13 msecs (HTTP/1.1 301) 5 headers in 173 bytes (1 switches on core 0)
+Internal Server Error: /app/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./app/views.py", line 4, in index
+    return HttpResponse("Hello world.")
+NameError: name 'HttpResponse' is not defined
+[pid: 10|app: 0|req: 5/5] 172.22.0.1 () {56 vars in 1027 bytes} [Thu Jan 18 07:26:54 2024] GET /app/ => generated 52358 bytes in 34 msecs (HTTP/1.1 500) 6 headers in 186 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./app/views.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 10)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /code
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (:8001)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /code/mainproject/django.ini
+*** Starting uWSGI 2.0.23 (64bit) on [Thu Jan 18 07:28:06 2024] ***
+compiled with version: 12.2.0 on 18 January 2024 05:38:21
+os: Linux-5.15.133.1-microsoft-standard-WSL2 #1 SMP Thu Oct 5 21:02:42 UTC 2023
+nodename: 22c074117f0a
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x556510ba86e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556510ba86e0 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 12, cores: 1)
+Python auto-reloader enabled
+[pid: 12|app: 0|req: 1/1] 172.22.0.1 () {56 vars in 1027 bytes} [Thu Jan 18 07:28:08 2024] GET /app/ => generated 12 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+[uwsgi-python-reloader] module/file ./mainproject/settings.py has been modified
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 12)...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /code
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (:8001)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from /code/mainproject/django.ini
+*** Starting uWSGI 2.0.23 (64bit) on [Thu Jan 18 07:31:35 2024] ***
+compiled with version: 12.2.0 on 18 January 2024 05:38:21
+os: Linux-5.15.133.1-microsoft-standard-WSL2 #1 SMP Thu Oct 5 21:02:42 UTC 2023
+nodename: 22c074117f0a
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /code
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address :8001 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.7.17 (default, Sep 20 2023, 11:53:41)  [GCC 12.2.0]
+Python main interpreter initialized at 0x5654f6bb66e0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145840 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5654f6bb66e0 pid: 1 (default app)
+mountpoint  already configured. skip.
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 14, cores: 1)
+Python auto-reloader enabled
+[pid: 14|app: 0|req: 1/1] 172.22.0.1 () {54 vars in 996 bytes} [Thu Jan 18 07:53:10 2024] GET /app/ => generated 451 bytes in 492 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+[pid: 14|app: 0|req: 2/2] 172.22.0.1 () {56 vars in 1027 bytes} [Thu Jan 18 08:01:14 2024] GET /app/ => generated 1811 bytes in 91 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 14|app: 0|req: 3/3] 172.22.0.1 () {56 vars in 1049 bytes} [Thu Jan 18 08:01:34 2024] GET /app/9/ => generated 641 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+[pid: 14|app: 0|req: 4/4] 172.22.0.1 () {56 vars in 1049 bytes} [Thu Jan 18 08:01:38 2024] GET /app/4/ => generated 641 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+[pid: 14|app: 0|req: 5/5] 172.22.0.1 () {56 vars in 1027 bytes} [Thu Jan 18 08:03:29 2024] GET /app/ => generated 1829 bytes in 26 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 14|app: 0|req: 6/6] 172.22.0.1 () {56 vars in 1049 bytes} [Thu Jan 18 08:03:31 2024] GET /app/4/ => generated 641 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
+[pid: 14|app: 0|req: 7/7] 172.22.0.1 () {56 vars in 1049 bytes} [Thu Jan 18 08:03:33 2024] GET /app/5/ => generated 701 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 166 bytes (1 switches on core 0)
