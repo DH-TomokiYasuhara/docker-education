@@ -1,0 +1,20 @@
+2024/01/18 07:19:43 [notice] 1#1: using the "epoll" event method
+2024/01/18 07:19:43 [notice] 1#1: nginx/1.25.3
+2024/01/18 07:19:43 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2024/01/18 07:19:43 [notice] 1#1: OS: Linux 5.15.133.1-microsoft-standard-WSL2
+2024/01/18 07:19:43 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2024/01/18 07:19:43 [notice] 1#1: start worker processes
+2024/01/18 07:19:43 [notice] 1#1: start worker process 21
+2024/01/18 07:19:43 [notice] 1#1: start worker process 22
+2024/01/18 07:19:43 [notice] 1#1: start worker process 23
+2024/01/18 07:19:43 [notice] 1#1: start worker process 24
+2024/01/18 07:19:43 [notice] 1#1: start worker process 25
+2024/01/18 07:19:43 [notice] 1#1: start worker process 26
+2024/01/18 07:19:43 [notice] 1#1: start worker process 27
+2024/01/18 07:19:43 [notice] 1#1: start worker process 28
+2024/01/18 07:20:28 [error] 25#25: *1 open() "/static/admin/css/fonts.css" failed (2: No such file or directory), client: 172.22.0.1, server: 127.0.0.1, request: "GET /static/admin/css/fonts.css HTTP/1.1", host: "localhost:8000", referrer: "http://localhost:8000/"
+2024/01/18 07:53:10 [error] 23#23: *13 open() "/static/pj_image/armx8-1ibhc-001.ico" failed (2: No such file or directory), client: 172.22.0.1, server: 127.0.0.1, request: "GET /static/pj_image/armx8-1ibhc-001.ico HTTP/1.1", host: "localhost:8000", referrer: "http://localhost:8000/app/"
+2024/01/18 08:01:34 [error] 26#26: *17 open() "/static/app_image/dixans_IMG.jpg" failed (2: No such file or directory), client: 172.22.0.1, server: 127.0.0.1, request: "GET /static/app_image/dixans_IMG.jpg HTTP/1.1", host: "localhost:8000", referrer: "http://localhost:8000/app/9/"
+2024/01/18 08:01:38 [error] 27#27: *19 open() "/static/app_image/dixans_IMG.jpg" failed (2: No such file or directory), client: 172.22.0.1, server: 127.0.0.1, request: "GET /static/app_image/dixans_IMG.jpg HTTP/1.1", host: "localhost:8000", referrer: "http://localhost:8000/app/4/"
+2024/01/18 08:03:32 [error] 25#25: *21 open() "/static/app_image/dixans_IMG.jpg" failed (2: No such file or directory), client: 172.22.0.1, server: 127.0.0.1, request: "GET /static/app_image/dixans_IMG.jpg HTTP/1.1", host: "localhost:8000", referrer: "http://localhost:8000/app/4/"
+2024/01/18 08:03:33 [error] 25#25: *21 open() "/static/app_image/fuglencoffee_IMG.jpg" failed (2: No such file or directory), client: 172.22.0.1, server: 127.0.0.1, request: "GET /static/app_image/fuglencoffee_IMG.jpg HTTP/1.1", host: "localhost:8000", referrer: "http://localhost:8000/app/5/"
